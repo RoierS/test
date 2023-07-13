@@ -86,7 +86,7 @@ const users = [
   },
 ];
 
-function getPersonWorkPeriod(users) {
+function getUsersWorkPeriod(users) {
   const result = [];
 
   users.forEach((user) => {
@@ -103,7 +103,7 @@ function getPersonWorkPeriod(users) {
 
       result.push({
         name: user.name,
-        yearsWorked: sumUserJobPeriod,
+        "Period of work (years)": sumUserJobPeriod,
       });
     }
   });
@@ -115,4 +115,4 @@ function getPersonWorkPeriod(users) {
   return result;
 }
 
-getPersonWorkPeriod(users);
+getUsersWorkPeriod(users);
